@@ -12,7 +12,7 @@ export default function TextBox(props) {
       let box= document.getElementById("resultBox") ;
       box.innerText=str;
       box.style.wordWrap="break-word";
-      box.style. overflow ="scroll";
+      box.style.overflow ="scroll";
       setText("")
     }
     /*To UpperCase Button */
