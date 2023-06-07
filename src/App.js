@@ -8,7 +8,7 @@ function App() {
     setAlert({ msg:txt});
     setTimeout(()=>{
       setAlert(null) ;
-    },1500);
+    },2000);
   }
   return (
     <div className="App">

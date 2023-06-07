@@ -6,7 +6,7 @@ export default function Navbar() {
 
     <div className='container my-'>
       
-<nav className="navbar navbar-expand-lg bg-warning-subtle my-3 ">
+<nav className="navbar navbar-expand bg-primary-subtle shadow my-3 w-relative ">
   <div className="container-fluid">
     <h1>TextOps.</h1>
   </div>
