@@ -2,8 +2,7 @@ import React from 'react' ;
 import { useState } from 'react';
 
 export default function TextBox(props) {
-  
-     const [text,setText]=useState("");
+   const [text,setText]=useState("");
     const handleChange=(evt)=>{
         console.log("Change Happend ");
         setText(evt.target.value);
