@@ -83,7 +83,7 @@ export default function TextBox(props) {
 <div className='container '>
   <div className='row my-3'>
 {/* ---------------------------------Text Area Div------------------------------------ */}
-    <div className="col-md-6 form-group  shadow p-3 mb-5 bg-white rounded m-auto  ">
+    <div className="col-md-6 form-group  shadow p-3 bg-white rounded m-auto  ">
     <label htmlFor="exampleFormControlTextarea1" className='badge bg-primary-subtle text-wrap my-2 fs-5 shadow'>Enter Your Text :</label>
     <textarea
      className="form-control shadow "
@@ -95,11 +95,11 @@ export default function TextBox(props) {
       />
 
        {/* Copy To clipBoard Button */} 
-      <button className='btn btn-secondary my-4 mx-1 fs-6 ' onClick={copyText} >Copy To ClipBoard</button>
+      <button className='btn btn-secondary my-1 mx-1 fs-6 ' onClick={copyText} >Copy To ClipBoard</button>
     {/* Reset Button */} 
-    <button className='btn btn-secondary my-4 mx-2' onClick={Reset} >Reset</button>
+    <button className='btn btn-secondary my-1 mx-2' onClick={Reset} >Reset</button>
 
-<div className='shadow-sm p-4 mb-5   bg-white rounded  my-1  text-center fs-6'>
+<div className='shadow-sm p-1 mb-5   bg-white rounded  my-1  text-center fs-6'>
 <p><strong>{`Total Characters :${text.length}`}</strong></p>
    <p><strong>{`Total Words : ${text.split(" ").length}`}</strong></p>
 </div>
@@ -108,7 +108,7 @@ export default function TextBox(props) {
 
 {/* ---------------------------------buttons------------------------------------ */}
 
-      <div className="col-md-4 form-group shadow p-3 mb-5   bg-white rounded  my-1 m-auto ">
+      <div className="col-md-6 form-group shadow p-2    bg-white rounded  my-1 m-auto ">
      {/* UpperCase Button */} 
       <button className='btn btn-secondary shadow my-2 mx-2'onClick={toUpper} >ToUpperCase</button>
      
@@ -132,9 +132,9 @@ export default function TextBox(props) {
           <input type="text" className="form-control shadow" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="replaceWith" />
         </div>
       
-        <button className='btn btn-secondary    my-4 mx-2 shadow' onClick={ReplaceWord} >Replace</button>
-        <button className='btn btn-secondary  my-4 mx-2 shadow' onClick={ReplaceAllWord}  >Replace All</button>
-        <p className='shadow-sm p-3 fs-6'><strong>Note: The Replace and ReplaceAll buttons can also be used as Delete and DeleteAll Buttons
+        <button className='btn btn-secondary    my-2 mx-2 shadow' onClick={ReplaceWord} >Replace</button>
+        <button className='btn btn-secondary  my-2 mx-2 shadow' onClick={ReplaceAllWord}  >Replace All</button>
+        <p className=' p-2 fs-6'><strong>Note: The Replace and ReplaceAll buttons can also be used as Delete and DeleteAll Buttons
           Just leave the ReplaceWith Feild Blank . </strong>
         </p>
     </div>  

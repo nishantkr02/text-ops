@@ -1,6 +1,9 @@
 import Navbar from "./Components/Navbar"
 import TextBox from "./Components/TextBox";
 import Alert from "./Components/Alert";
+import About from "./Components/About";
+import { Route,BrowserRouter ,Link ,Switch, Routes } from "react-router-dom"
+  
 import { useState } from "react";
 function App() {
   const [alert,setAlert]=useState(null);
@@ -14,7 +17,11 @@ function App() {
     <div className="App">
       <Navbar />
       <Alert alert={alert} />
-      <TextBox showAlert ={setAlertText} />
+     <Routes>
+     <Route path="/" element={<TextBox showAlert={setAlertText} />} />
+      <Route path="/About" element={<About />} />
+     </Routes>
+     
     </div>
   );
 }
