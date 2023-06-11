@@ -118,13 +118,13 @@ export default function TextBox(props) {
       <div className="col-md-6 form-group shadow    bg-white rounded p-3  ">
         <div className=' d-flex justify-content-between'>
      {/* UpperCase Button */} 
-      <button className='btn btn-secondary shadow my-2 mx-2'onClick={toUpper} >ToUpperCase</button>
+      <button className='btn btn-secondary shadow m-auto'onClick={toUpper} >ToUpperCase</button>
      
       {/* LowerCase Button */} 
       <button className='btn btn-secondary  shadow m-auto' onClick={toLower} >ToLowerCase</button>
       
       {/* Remove Extra Space Button */} 
-      <button className='btn btn-secondary  my-2 mx-2' onClick={removeSpaces} >Remove Extra Space</button>
+      <button className='btn btn-secondary  m-auto' onClick={removeSpaces} >Remove  Space</button>
       </div>
 
       {/*------------Replace word--------------------------- */}
