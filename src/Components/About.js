@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div className='col-md-6 m-auto shadow-lg p-2'>
 
-    <div className='container'>
-      <img className='col-10 mx-5 p-2  my-2 ' src='https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png '/>
+    <div className='container d-flex justify-content-center  my-3 p-3'>
+      <img  src='https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png ' alt="Welcome Image" width="500" height="300" />
     </div>
 <div className="accordion p-2 " id="accordionPanelsStayOpenExample">
 

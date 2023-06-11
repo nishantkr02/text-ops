@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
 
 
-<div className='container my'>
+<div className='container '>
       
 <nav className="navbar navbar-expand bg-primary-subtle shadow my-3  ">
   <div className="container-fluid">
