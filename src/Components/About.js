@@ -2,19 +2,22 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='col-md-6 m-auto shadow '>
+    <div className='col-md-6 m-auto shadow-lg p-2'>
 
-<div className="accordion " id="accordionPanelsStayOpenExample">
+    <div className='container'>
+      <img className='col-10 mx-5 p-2  my-2 ' src='https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png '/>
+    </div>
+<div className="accordion p-2 " id="accordionPanelsStayOpenExample">
 
   <div className="accordion-item text-center ">
     <h2 className="accordion-header" id="panelsStayOpen-headingOne">
-      <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+      <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
        About the App 
       </button>
     </h2>
-    <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+    <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
       <div className="accordion-body">
-        <p  className='border shadow-lg m-auto p-2  text-success '>
+        <p  className='border shadow-lg m-auto p-2  text-secondary '>
             This is a simple Text Editor App which Provides the users some basic yet Important Functionlaties .<br/>
             <strong >
             The Functionalities Includes : <br/><br/>
@@ -44,7 +47,7 @@ export default function About() {
     </h2>
     <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
       <div className="accordion-body">
-      <p  className='border shadow-lg m-auto p-2  text-success '>
+      <p  className='border shadow-lg m-auto p-2  text-secondary '>
       <strong > Now Let's See How to use some of the Basic  Functionalities Mentioned in the section above <br/>  </strong>
       <strong>Step 1: </strong> Enter Your Text Content in the text box Secion .<br/>
       <strong>Step 2: </strong> Now Choose the Operation you want to perfrom on yout text . <br/>
@@ -64,18 +67,21 @@ export default function About() {
     </div>
   </div>
 
-  <div className="accordion-item text-center">
+  <div className="accordion-item text-center ">
     <h2 className="accordion-header" id="panelsStayOpen-headingThree">
       <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-       About the Developer
+      A Message from the Developer
       </button>
     </h2>
     <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
       <div className="accordion-body">
         <p  className='text-secondary p-3 shadow-lg'>
         <strong>Hi there .. ! <br/>
-        I am Nishant . I am New to this world of the Web Developers .
-        <br/> Still got A Long Way to Go ,So many things to Learn and <br/> A long list of apps to build  .
+        I am Nishant . I hope You will find this App Useful <br/><br/>
+         I am New to this world of the Web Developers ,
+        <br/> still got A Long Way to Go ,so many new things to Learn and <br/> A long list of apps to build  .<br/>
+        So If you have any suggestions , please do share it on my  
+        <a href='https://github.com/nishantkr02'> GitHub </a> Page .
 
         </strong> 
         </p>
