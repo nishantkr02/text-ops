@@ -118,23 +118,27 @@ export default function TextBox(props) {
 
 {/* ---------------------------------buttons------------------------------------ */}
 
-      <div className="col-md-6 form-group shadow    bg-white rounded p-3  ">
+      <div className="col-md-6 form-group shadow    bg-white rounded   ">
 
-    <div className=' d-lg-flex justify-content-between'>
+    <div className=' d-md-flex justify-content-center'>
 
      {/* UpperCase Button */} 
-     <div>
+     <div className='p-2'>
       <button className='btn btn-secondary shadow my-1'onClick={toUpper} >ToUpperCase</button>
       </div>
 
+
+      <div className='d-lg-flex justify-content-start '>
       {/* LowerCase Button */} 
-      <div>
+      <div className='p-2'>
       <button className='btn btn-secondary  shadow my-1' onClick={toLower} >ToLowerCase</button>
       </div>
 
       {/* Remove Extra Space Button */} 
-      <div>
-      <button className='btn btn-secondary  my-1' onClick={removeSpaces} >RemoveSpaces</button>
+      <div className='p-2'>
+      <button className='btn btn-secondary  my-1  ' onClick={removeSpaces} >RemoveSpaces</button>
+      </div>
+      
       </div>
       </div>
 
