@@ -100,11 +100,14 @@ export default function TextBox(props) {
       onChange={handleChange}
       />
 
-      <div className='d-flex justify-content-center my-3'>
+      <div className=' my-3'>
        {/* Copy To clipBoard Button */} 
+  
       <button className='btn btn-secondary my-1 mx-1 fs-6 ' onClick={copyText} >Copy To ClipBoard</button>
+  
     {/* Reset Button */} 
     <button className='btn btn-secondary my-1 mx-2' onClick={Reset} >Reset</button>
+
     </div>
 <div className=' p-2  bg-white rounded  my-1  text-center fs-6'>
 <p><strong>{`Total Characters :${text.length}`}</strong></p>
@@ -116,19 +119,27 @@ export default function TextBox(props) {
 {/* ---------------------------------buttons------------------------------------ */}
 
       <div className="col-md-6 form-group shadow    bg-white rounded p-3  ">
-        <div className=' d-flex justify-content-between'>
+
+    <div className=' d-lg-flex justify-content-between'>
+
      {/* UpperCase Button */} 
-      <button className='btn btn-secondary shadow m-auto'onClick={toUpper} >ToUpperCase</button>
-     
+     <div>
+      <button className='btn btn-secondary shadow my-1'onClick={toUpper} >ToUpperCase</button>
+      </div>
+
       {/* LowerCase Button */} 
-      <button className='btn btn-secondary  shadow m-auto' onClick={toLower} >ToLowerCase</button>
-      
+      <div>
+      <button className='btn btn-secondary  shadow my-1' onClick={toLower} >ToLowerCase</button>
+      </div>
+
       {/* Remove Extra Space Button */} 
-      <button className='btn btn-secondary  m-auto' onClick={removeSpaces} >Remove  Space</button>
+      <div>
+      <button className='btn btn-secondary  my-1' onClick={removeSpaces} >RemoveSpaces</button>
+      </div>
       </div>
 
       {/*------------Replace word--------------------------- */}
-      <div className='my-4' >
+      <div className='my-4 ' >
           <div className="input-group input-group-sm mb-3">
           <div className="input-group-prepend">
             <span className="input-group-text" >Word</span>
@@ -142,7 +153,8 @@ export default function TextBox(props) {
           </div>
           <input type="text" className="form-control shadow" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="replaceWith" />
         </div>
-        <div className='d-flex justify-content-center'>
+        <div className='d-sm-flex justify-content-center'>
+
         <button className='btn btn-secondary    my-2 mx-2 shadow' onClick={ReplaceWord} >Replace</button>
         <button className='btn btn-secondary  my-2 mx-2 shadow' onClick={ReplaceAllWord}  >Replace All</button>
         
