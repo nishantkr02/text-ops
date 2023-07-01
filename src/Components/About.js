@@ -26,6 +26,7 @@ export default function About() {
             - Convert To UpperCase . <br/>
             - Convert To LowerCase . <br/>
             - Remove all the Extra Spaces  . <br/>
+            - Remove all Special Characters . <br/>
             - Delete all occurance of a Word <br/>
             - Replace A Word With Another Word  <br/>
             - Replace all occurance of a Word with another  <br/>

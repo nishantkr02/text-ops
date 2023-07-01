@@ -148,26 +148,27 @@ const removeAllSpc =() =>{
 
      {/* UpperCase Button */} 
      <div  >
-      <button className='btn btn-secondary shadow my-1'onClick={toUpper} >ToUpperCase</button>
+      <button className='btn btn-secondary shadow my-3'onClick={toUpper} >ToUpperCase</button>
       </div>
 
      
       
       {/* LowerCase Button */} 
       <div >
-      <button className='btn btn-secondary  shadow my-1' onClick={toLower} >ToLowerCase</button>
+      <button className='btn btn-secondary  shadow my-3' onClick={toLower} >ToLowerCase</button>
       </div>
 
-      {/* Remove Extra Space Button */} 
-      <div  >
-      <button className='btn btn-secondary  my-1  ' onClick={removeSpaces} >RemoveSpaces</button>
-      </div>
+     
       
       </div>
-      <div className='d-lg-flex justify-content-center '>
+      <div className='d-lg-flex justify-content-between '>
  {/* Remove Special Characters Button */} 
     <div >
-      <button className='btn btn-secondary  my-1  ' onClick={removeAllSpecials} >Remove Special Characters</button>
+      <button className='btn btn-secondary  my-3  ' onClick={removeAllSpecials} >Remove Special Characters</button>
+      </div>
+       {/* Remove Extra Space Button */} 
+       <div  >
+      <button className='btn btn-secondary  my-3  ' onClick={removeSpaces} >Remove Extra Spaces</button>
       </div>
       </div>
 
