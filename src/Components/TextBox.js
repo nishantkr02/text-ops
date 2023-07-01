@@ -80,7 +80,31 @@ export default function TextBox(props) {
       setText(text.replace(regEx,replacement));
       props.showAlert(`Replaced All  " ${word} " with " ${replacement} " `);
      }
-
+  /*To remove Special Characters */
+  const removeAllSpecials=()=>{
+    let newText= text.replace(/[^a-zA-Z0-9 ]/g, "");
+    setText(newText);
+    props.showAlert("Special Characters Removed") ;
+    //showResult(lowText) ;
+  }
+const removeSpc =() =>{
+  let word=document.getElementById("wordReplace").value ;
+  let replacement = document.getElementById("replaceWith").value ;
+  let template=` /[&\/\\${word}]/i,'${replacement}' ` ;
+  let newText=text.replace(template);
+  setText(newText);
+    props.showAlert(`Special Characters${word} replace With ${replacement}` ) ;
+}
+const removeAllSpc =() =>{
+  let word=document.getElementById("wordReplace").value ;
+  let replacement = document.getElementById("replaceWith").value ;
+  let template=` /[${word}]/ig,'${replacement}' ` ;
+  console.log(template);
+  let newText=text.replace(template);
+  console.log(newText);
+  setText(newText);
+    props.showAlert(`All Special Characters${word} replace With ${replacement}` ) ;
+}
 
 
 
@@ -118,27 +142,32 @@ export default function TextBox(props) {
 
 {/* ---------------------------------buttons------------------------------------ */}
 
-      <div className="col-md-6 form-group shadow    bg-white rounded   ">
+      <div className="col-md-6  shadow    bg-white rounded   ">
 
-    <div className=' d-md-flex justify-content-center'>
+    <div className='d-lg-flex justify-content-between border '>
 
      {/* UpperCase Button */} 
-     <div className='p-2'>
+     <div className='border' >
       <button className='btn btn-secondary shadow my-1'onClick={toUpper} >ToUpperCase</button>
       </div>
 
-
-      <div className='d-lg-flex justify-content-start '>
+     
+      
       {/* LowerCase Button */} 
-      <div className='p-2'>
+      <div className='border'>
       <button className='btn btn-secondary  shadow my-1' onClick={toLower} >ToLowerCase</button>
       </div>
 
       {/* Remove Extra Space Button */} 
-      <div className='p-2'>
+      <div  className='border'>
       <button className='btn btn-secondary  my-1  ' onClick={removeSpaces} >RemoveSpaces</button>
       </div>
       
+      </div>
+      <div className='d-lg-flex justify-content-between border '>
+ {/* Remove Special Characters Button */} 
+    <div >
+      <button className='btn btn-secondary  my-1  ' onClick={removeAllSpecials} >Remove Special Characters</button>
       </div>
       </div>
 
@@ -158,11 +187,14 @@ export default function TextBox(props) {
           <input type="text" className="form-control shadow" aria-label="Small" aria-describedby="inputGroup-sizing-sm" id="replaceWith" />
         </div>
         <div className='d-sm-flex justify-content-center'>
+        <button className='btn btn-secondary    my-2 mx-2 shadow' onClick={ReplaceWord} >Replace Word</button>
+        <button className='btn btn-secondary  my-2 mx-2 shadow' onClick={ReplaceAllWord}  >ReplaceAll Words</button>
+    </div> 
+    <div className='d-md-flex justify-content-center'>
+    <button className='btn btn-secondary    my-2 mx-2 shadow' onClick={removeSpc}> Replace Special Character </button>
+    <button className='btn btn-secondary    my-2 mx-2 shadow'onClick={removeAllSpc} >ReplaceAll Special Character </button>
 
-        <button className='btn btn-secondary    my-2 mx-2 shadow' onClick={ReplaceWord} >Replace</button>
-        <button className='btn btn-secondary  my-2 mx-2 shadow' onClick={ReplaceAllWord}  >Replace All</button>
-        
-    </div>  
+      </div> 
     
    </div>
    <div className='d-flex justify-content-center p-3'>
