@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='col-md-6 m-auto shadow-lg p-2'>
+    <div className='col-md-6 m-auto shadow-lg p-2 my-3'>
 
     <div className='container d-flex justify-content-center  my-3 p-3'>
       <img  src='https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png ' alt="Welcome" width="500" height="300" />
@@ -18,7 +18,7 @@ export default function About() {
     <div id="panelsStayOpen-collapseOne" className="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
       <div className="accordion-body">
         <p  className='border shadow-lg m-auto p-2  text-secondary '>
-            This is a simple Text Editor App which Provides the users some basic yet Important Functionlaties .<br/>
+            This is a Text Editor App which Provides the users some basic yet Important Functionlaties .<br/>
             <strong >
             The Functionalities Includes : <br/><br/>
             - Delete A Word   <br/>

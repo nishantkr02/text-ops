@@ -9,7 +9,7 @@ export default function Navbar() {
       
 <nav className="navbar navbar-expand bg-primary-subtle shadow my-3  ">
   <div className="container-fluid">
-    <h1 className='text-primary p-2   '>TextOps.</h1> 
+    <h1 className='p-2 fs-2 '>TextOps.</h1> 
      
       <ul className="navbar-nav me-2 mb-2 mb-lg-0">
         <li className="nav-item ">

@@ -1,5 +1,6 @@
 import React from 'react' ;
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TextBox(props) {
    const [text,setText]=useState("");
@@ -111,10 +112,10 @@ const removeAllSpc =() =>{
   return (
 
 <div className='container '>
-  <div className='row my-3'>
+  <div className='row p-2 my-3'>
 {/* ---------------------------------Text Area Div------------------------------------ */}
     <div className="col-md-6 form-group  shadow  bg-white rounded m-auto p-3 ">
-    <label htmlFor="exampleFormControlTextarea1" className='badge bg-primary-subtle text-wrap my-2 fs-5 shadow'>Enter Your Text :</label>
+    <label htmlFor="exampleFormControlTextarea1" className='badge bg-primary-subtle text-wrap text-black my-2 fs-5 shadow-sm '>Enter Your Text :</label>
     <textarea
      className="form-control shadow "
       id="inputTextArea" 
@@ -195,7 +196,7 @@ const removeAllSpc =() =>{
     
    </div>
    <div className='d-flex justify-content-center p-3'>
-   <p className='text-secondary'><strong>Need Help ?  Visit to About Page   </strong>
+   <p className='text-secondary' ><strong>Need Help ?  Visit <Link to="/About" style={{textDecoration:"none"}} >About Page</Link>   </strong>
         </p>
         </div>
 </div>
